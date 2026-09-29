@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ice cream vending machine example</title>
+    <meta charset="UTF-8" />
+	<style>
+	  body {
+		  font-family: sans-serif;
+		}
+
+		/* Initial balance should be 0 so all button fonts are red */
+		#icecream1,
+		#icecream2,
+		#icecream3 {
+		  color: red;
+		}
+		
+		#selection {
+		  color: green;
+		}
+	  </style>
+  </head>
+
+  <body>
+	<h2>
+		Ice cream Vending Machine
+	  </h2>
+	<h4>
+		To buy ice cream, add money using the buttons below.
+	  </h4>  
+    <!-- To insert coins, click the buttons below-->
+    <input type="button" id="btn1" value="2000 won" />
+    <input type="button" id="btn2" value="1000 won" />
+    <input type="button" id="btn3" value="500 won" />
+	<h4>
+		Select the ice cream you want.
+	  </h4>  
+    <!-- To purchase ice creams, click the buttons below -->
+    <input type="button" id="icecream1" value="Haagen-dazs (4500 won)" />
+    <input type="button" id="icecream2" value="World Cone (2000 won)" />
+    <input type="button" id="icecream3" value="Together (3000 won)" />
+    
+
+    <br />
+
+    <br />
+	<!-- Choice shows selection inputted by users -->
+    Choice : <span id="selection" > </span>
+	  
+	<br />
+
+    <br />
+    <!-- Balance shows current balance of user-->
+    Balance : <span id="current"> </span>
+
+    <script src="practice.js"></script>
+  </body>
+</html>
